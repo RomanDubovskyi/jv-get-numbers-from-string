@@ -15,11 +15,9 @@ public class FindNumbers {
     public int[] getAllNumbers(String text) {
         String reworkedString = text.replaceAll("[^\\d.-]+", " ");
         String[] arrOfString = reworkedString.trim().split(" ");
-        int i = 0;
         int[] result = new int[arrOfString.length];
-        for (String element : arrOfString) {
-            result[i] = Integer.parseInt(element) * 2;
-            i++;
+        for (int i = 0; i < result.length; i++) {
+            result[i] = Integer.parseInt(arrOfString[i]) * 2;
         }
         return result;
     }
