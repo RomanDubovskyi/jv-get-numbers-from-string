@@ -18,8 +18,8 @@ public class FindNumbers {
         int i = 0;
         int[] result = new int[arrOfString.length];
         for (String element : arrOfString) {
-                result[i] = Integer.parseInt(element) * 2;
-                i++;
+            result[i] = Integer.parseInt(element) * 2;
+            i++;
         }
         return result;
     }
